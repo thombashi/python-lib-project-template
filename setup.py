@@ -54,9 +54,9 @@ setuptools.setup(
     setup_requires=SETUPTOOLS_REQUIRES + PYTEST_RUNNER_REQUIRES,
     tests_require=TESTS_REQUIRES,
     extras_require={
-        "test": TESTS_REQUIRES,
-        "docs": DOCS_REQUIRES,
         "build": BUILD_REQUIRES,
+        "docs": DOCS_REQUIRES,
+        "test": TESTS_REQUIRES,
     },
 
     classifiers=[
