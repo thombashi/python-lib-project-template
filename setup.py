@@ -21,6 +21,10 @@ ENCODING = "utf8"
 pkg_info = {}
 
 
+def need_pytest():
+    return set(["pytest", "test", "ptr"]).intersection(sys.argv)
+
+
 with io.open(os.path.join(MODULE_NAME, "__version__.py"), encoding=ENCODING) as f:
     exec(f.read(), pkg_info)
 
@@ -40,8 +44,7 @@ with open(os.path.join(REQUIREMENT_DIR, "build_requirements.txt")) as f:
     BUILD_REQUIRES = [line.strip() for line in f if line.strip()]
 
 SETUPTOOLS_REQUIRES = ["setuptools>=20.2.2"]
-NEEDS_PYTEST = set(["pytest", "test", "ptr"]).intersection(sys.argv)
-PYTEST_RUNNER_REQUIRES = ["pytest-runner"] if NEEDS_PYTEST else []
+PYTEST_RUNNER_REQUIRES = ["pytest-runner"] if need_pytest() else []
 
 setuptools.setup(
     name=MODULE_NAME,
@@ -56,6 +59,10 @@ setuptools.setup(
     license=pkg_info["__license__"],
     long_description=LONG_DESCRIPTION,
     packages=setuptools.find_packages(exclude=["test*"]),
+    project_urls={
+        "Documentation": "http://{typepy}.rtfd.io/",
+        "Tracker": "{:s}/issues".format(REPOSITORY_URL),
+    },
 
     install_requires=SETUPTOOLS_REQUIRES + INSTALL_REQUIRES,
     setup_requires=SETUPTOOLS_REQUIRES + PYTEST_RUNNER_REQUIRES,
