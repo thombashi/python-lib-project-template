@@ -6,5 +6,5 @@ Run the tests
 ============================================
 ::
 
-    $ sudo pip install .[test]
+    $ pip install .[test]
     $ python setup.py test
