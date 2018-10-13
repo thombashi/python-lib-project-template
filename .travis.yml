@@ -30,6 +30,14 @@ matrix:
           sudo: required
           env: TOXENV=python3.7
 
+        - os: linux
+          python: 3.6
+          env: TOXENV=cov
+          after_success:
+              - pip install pytest-cov --upgrade
+              - python setup.py test --addopts "-v --cov XXXX --cov-report term-missing"
+              - coveralls
+
         - os: osx
           language: generic
           env: TOXENV=python3.6
