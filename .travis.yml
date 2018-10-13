@@ -47,6 +47,3 @@ install:
 
 script:
     - bash -x .travis/run_test.sh
-
-after_success:
-    - coveralls
