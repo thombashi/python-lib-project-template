@@ -34,7 +34,7 @@ matrix:
           python: 3.6
           env: TOXENV=cov
           after_success:
-              - pip install pytest-cov --upgrade
+              - pip install pytest-cov coveralls --upgrade
               - python setup.py test --addopts "-v --cov XXXX --cov-report term-missing"
               - coveralls
 
