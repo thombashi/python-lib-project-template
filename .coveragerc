@@ -8,3 +8,4 @@ exclude_lines =
     abstractmethod
     abstractproperty
     abstractclassmethod
+    warnings.warn
