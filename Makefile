@@ -1,4 +1,6 @@
+PACKAGE := package_name
 BUILD_DIR := build
+
 
 .PHONY: build
 build:
@@ -8,9 +10,14 @@ build:
 
 .PHONY: clean
 clean:
-	@rm -rf $(BUILD_DIR)/ dist/ .eggs/ .pytest_cache/ .tox/ **/*/__pycache__/ *.egg-info/
+	@rm -rf $(PACKAGE)-*.*.*/ $(BUILD_DIR)/ dist/ .eggs/ .pytest_cache/ .tox/ **/*/__pycache__/ *.egg-info/
 
 .PHONY: fmt
 fmt:
 	@black $(CURDIR)
 	@isort --apply --recursive
+
+.PHONY: release
+release:
+	@python setup.py release
+	@rm -rf dist/
