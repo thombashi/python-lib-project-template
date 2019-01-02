@@ -1,10 +1,17 @@
-Python package template
+**Python package template**
+
+.. contents:: Table of Contents
+   :depth: 2
+
+
+Summary
 ============================================
 
 
-Run the tests
+Installation
 ============================================
-::
 
-    $ pip install .[test]
-    $ python setup.py test
+
+Dependencies
+============================================
+Python 2.7+ or 3.4+
