@@ -10,6 +10,9 @@ Summary
 
 Installation
 ============================================
+::
+
+    pip install <package name>
 
 
 Dependencies
