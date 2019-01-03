@@ -11,6 +11,12 @@ Summary
 Usage
 ============================================
 
+:Sample Code:
+    .. code-block:: python
+
+:Output:
+    .. code-block::
+
 
 Installation
 ============================================
