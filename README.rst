@@ -1,6 +1,5 @@
-**Python package template**
-
-.. contents:: Table of Contents
+.. contents:: **Python package template**
+   :backlinks: top
    :depth: 2
 
 
