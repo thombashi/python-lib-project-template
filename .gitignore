@@ -115,6 +115,7 @@ dmypy.json
 .pyre/
 
 # User settings
+_sandbox/
 *_profile
 Untitled.ipynb
 
