@@ -13,8 +13,12 @@ Usage
 :Sample Code:
     .. code-block:: python
 
+        # Sample code
+
 :Output:
     .. code-block::
+
+        # Output
 
 
 Installation
