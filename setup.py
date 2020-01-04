@@ -50,7 +50,6 @@ setuptools.setup(
     name=MODULE_NAME,
     version=pkg_info["__version__"],
     url=REPOSITORY_URL,
-
     author=pkg_info["__author__"],
     author_email=pkg_info["__email__"],
     description="DESCRIPTION",
@@ -64,7 +63,6 @@ setuptools.setup(
         "Source": REPOSITORY_URL,
         "Tracker": "{:s}/issues".format(REPOSITORY_URL),
     },
-
     python_requires=">=3.5",
     install_requires=SETUPTOOLS_REQUIRES + INSTALL_REQUIRES,
     setup_requires=SETUPTOOLS_REQUIRES + PYTEST_RUNNER_REQUIRES,
@@ -73,7 +71,6 @@ setuptools.setup(
         "dev": ["releasecmd>=0.1.0,<1", "twine", "wheel"] + DOCS_REQUIRES,
         "test": TESTS_REQUIRES,
     },
-
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Information Technology",
@@ -87,4 +84,5 @@ setuptools.setup(
         "Topic :: Software Development :: Libraries",
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
-    cmdclass=cmdclass)
+    cmdclass=cmdclass,
+)
