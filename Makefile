@@ -34,6 +34,10 @@ fmt:
 	@autoflake --in-place --recursive --remove-all-unused-imports --exclude "__init__.py" .
 	@isort --apply --recursive
 
+.PHONY: setup
+setup:
+	@pip install --upgrade .[dev] tox
+
 .PHONY: release
 release:
 	@python setup.py release --sign
