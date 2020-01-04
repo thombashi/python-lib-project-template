@@ -12,6 +12,7 @@ build:
 .PHONY: check
 check:
 	python setup.py check
+	travis lint
 	pylama
 
 .PHONY: clean
