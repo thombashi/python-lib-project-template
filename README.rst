@@ -1,6 +1,14 @@
-.. contents:: **Python package template**
+.. contents:: **package_name**
    :backlinks: top
    :depth: 2
+
+
+Python package template: TODO
+============================================
+- Click ``[Use this template]`` button to create a new repository
+- Replace templates:
+    - from ``package_name`` to your package name within the repository
+    - authorized information
 
 
 Summary
@@ -25,9 +33,42 @@ Installation
 ============================================
 ::
 
-    pip install <package name>
+    pip install <package_name>
 
 
 Dependencies
 ============================================
 Python 3.5+
+
+
+Development
+============================================
+
+Setup
+--------------------------------------------
+::
+
+    $ pip install .[dev] --upgrade
+
+Running tests
+--------------------------------------------
+::
+
+    $ tox
+
+Linting
+--------------------------------------------
+::
+
+    $ make check
+
+Release a package to PyPI
+--------------------------------------------
+::
+
+    $ make build
+    $ make release
+
+- Prerequisites for release:
+    - PyPI account
+    - GPG key
