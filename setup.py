@@ -69,7 +69,7 @@ setuptools.setup(
     setup_requires=SETUPTOOLS_REQUIRES + PYTEST_RUNNER_REQUIRES,
     tests_require=TESTS_REQUIRES,
     extras_require={
-        "dev": ["releasecmd>=0.1.0,<1", "twine", "wheel"]
+        "dev": ["releasecmd>=0.2.0,<1", "twine", "wheel"]
         + ["autoflake", "black", "isort", "pylama"]
         + DOCS_REQUIRES
         + TESTS_REQUIRES,
