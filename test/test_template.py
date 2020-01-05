@@ -10,11 +10,11 @@ def failed_func(value: str) -> None:
 
 
 class Test_Name:
-    @pytest.mark.parametrize(["value", "expected"], [["dummy test", "dummy test"],])
+    @pytest.mark.parametrize(["value", "expected"], [["dummy test", "dummy test"]])
     def test_normal(self, value, expected):
         assert dummy_func(value) == expected
 
-    @pytest.mark.parametrize(["value", "expected"], [["nop", ValueError],])
+    @pytest.mark.parametrize(["value", "expected"], [["nop", ValueError]])
     def test_exception(self, value, expected):
         with pytest.raises(expected):
             failed_func(value)
