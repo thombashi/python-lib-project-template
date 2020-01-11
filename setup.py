@@ -1,6 +1,6 @@
 import os.path
 import sys
-from typing import Dict  # noqa
+from typing import Dict, List  # noqa
 
 import setuptools
 
@@ -13,14 +13,14 @@ ENCODING = "utf8"
 pkg_info = {}  # type: Dict[str, str]
 
 
-def pytest_runner_requires():
+def pytest_runner_requires() -> List[str]:
     if set(["pytest", "test", "ptr"]).intersection(sys.argv):
         return ["pytest-runner"]
 
     return []
 
 
-def get_release_command_class():
+def get_release_command_class() -> Dict:
     try:
         from releasecmd import ReleaseCommand
     except ImportError:
