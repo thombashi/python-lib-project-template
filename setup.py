@@ -1,4 +1,3 @@
-import io
 import os.path
 import sys
 
@@ -32,7 +31,7 @@ def get_release_command_class():
 with open(os.path.join(MODULE_NAME, "__version__.py")) as f:
     exec(f.read(), pkg_info)
 
-with io.open("README.rst", encoding=ENCODING) as f:
+with open("README.rst", encoding=ENCODING) as f:
     LONG_DESCRIPTION = f.read()
 
 with open(os.path.join(REQUIREMENT_DIR, "requirements.txt")) as f:
