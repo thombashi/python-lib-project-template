@@ -12,7 +12,7 @@ build:
 .PHONY: check
 check:
 	tox -e lint
-	travis lint
+	-travis lint
 
 .PHONY: clean
 clean:
