@@ -24,7 +24,8 @@ matrix:
       python: 3.7
       env: TOXENV=cov
       after_success:
-        - travis_retry pip install coveralls
+        - travis_retry pip install codecov coveralls
+        - codecov
         - coveralls
 
     - os: osx
