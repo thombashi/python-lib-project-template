@@ -1,5 +1,4 @@
 import pytest
-
 from project_name import do_something, failed_func
 
 
