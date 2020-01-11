@@ -29,7 +29,7 @@ skip_glob = [
 ]
 
 [tool.coverage.run]
-source = ['package_name']
+source = ['project_name']
 branch = true
 
 [tool.coverage.report]
