@@ -8,7 +8,10 @@ Python package template: TODO
 - Click ``[Use this template]`` button to create a new repository
 - Replace templates:
     - from ``package_name`` to your package name within the repository
-    - authorized information
+    - authorized information at ``<package_name>/__version__.py``
+
+
+********************************************************
 
 
 Summary
