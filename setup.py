@@ -46,8 +46,6 @@ with open(os.path.join(REQUIREMENT_DIR, "docs_requirements.txt")) as f:
 
 SETUPTOOLS_REQUIRES = ["setuptools>=38.3.0"]
 
-cmdclass = get_release_command_class()
-
 setuptools.setup(
     name=MODULE_NAME,
     version=pkg_info["__version__"],
@@ -89,5 +87,5 @@ setuptools.setup(
         "Topic :: Software Development :: Libraries",
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
-    cmdclass=cmdclass,
+    cmdclass=get_release_command_class(),
 )
