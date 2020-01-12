@@ -3,16 +3,16 @@
    :depth: 2
 
 
-Python package template: TODO
+Python project template: TODO
 ============================================
 - Click ``[Use this template]`` button to create a new repository
-- Replace templates:
-    - from ``project_name`` to your package name within the repository
-    - authorized information at ``<project_name>/__version__.py``
+- Replace ``project_name`` within the repository to an arbitrary name
+- Modify authorized information at ``<project_name>/__version__.py``
 
 
 ********************************************************
 
+README
 
 Summary
 ============================================
@@ -59,6 +59,7 @@ Dependencies
 ============================================
 Python 3.5+
 
+********************************************************
 
 Development
 ============================================
