@@ -11,7 +11,7 @@ build:
 
 .PHONY: check
 check:
-	tox -e lint
+	@tox -e lint
 	-travis lint
 
 .PHONY: clean
@@ -30,7 +30,7 @@ clean:
 
 .PHONY: fmt
 fmt:
-	tox -e fmt
+	@tox -e fmt
 
 .PHONY: release
 release:
