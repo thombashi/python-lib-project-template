@@ -4,9 +4,7 @@ PACKAGE := python_package_template
 .PHONY: build
 build:
 	@make clean
-	@python setup.py sdist bdist_wheel
-	@twine check dist/*
-	@python setup.py clean
+	@tox -e build
 	ls -lh dist/*
 
 .PHONY: check
