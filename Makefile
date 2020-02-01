@@ -14,7 +14,7 @@ check:
 
 .PHONY: clean
 clean:
-	@python setup.py clean
+	@-python setup.py clean --all
 	@rm -rf $(PACKAGE)-*.*.*/ \
 		dist/ \
 		pip-wheel-metadata/ \
@@ -22,9 +22,9 @@ clean:
 		.pytest_cache/ \
 		.tox/ \
 		*.egg-info/
-	@find . -name "__pycache__" -type d -exec rm -rf "{}" \;
-	@find . -name "*.pyc" -delete
-	@find . -not -path '*/\.*' -type f | grep -E .+\.py\.[a-z0-9]{32,}\.py$ | xargs -r rm
+	@-find . -name "__pycache__" -type d -exec rm -rf "{}" \;
+	@-find . -name "*.pyc" -delete
+	@-find . -not -path '*/\.*' -type f | grep -E .+\.py\.[a-z0-9]{32,}\.py$ | xargs -r rm
 
 .PHONY: fmt
 fmt:
