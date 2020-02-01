@@ -68,10 +68,6 @@ setuptools.setup(
     install_requires=SETUPTOOLS_REQUIRES + INSTALL_REQUIRES,
     setup_requires=SETUPTOOLS_REQUIRES + pytest_runner_requires(),
     tests_require=TESTS_REQUIRES,
-    extras_require={
-        "dev": ["releasecmd>=0.2.0,<1"] + DOCS_REQUIRES + TESTS_REQUIRES,
-        "test": TESTS_REQUIRES,
-    },
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Information Technology",
