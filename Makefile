@@ -1,6 +1,3 @@
-PACKAGE := python_package_template
-
-
 .PHONY: build
 build:
 	@make clean
