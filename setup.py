@@ -33,9 +33,6 @@ with open(os.path.join(REQUIREMENT_DIR, "requirements.txt")) as f:
 with open(os.path.join(REQUIREMENT_DIR, "test_requirements.txt")) as f:
     TESTS_REQUIRES = [line.strip() for line in f if line.strip()]
 
-with open(os.path.join(REQUIREMENT_DIR, "docs_requirements.txt")) as f:
-    DOCS_REQUIRES = [line.strip() for line in f if line.strip()]
-
 SETUPTOOLS_REQUIRES = ["setuptools>=38.3.0"]
 
 setuptools.setup(
