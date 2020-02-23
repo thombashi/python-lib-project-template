@@ -1,5 +1,5 @@
 import os.path
-from typing import Dict, List  # noqa
+from typing import Dict
 
 import setuptools
 
