@@ -68,6 +68,7 @@ setuptools.setup(
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3 :: Only",
     ],
     cmdclass=get_release_command_class(),
 )
