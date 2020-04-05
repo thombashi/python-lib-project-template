@@ -7,6 +7,7 @@ Python project template: TODO
 ============================================
 - Click ``[Use this template]`` button to create a new repository
 - Replace ``project_name`` within the repository to an arbitrary name
+    - `./rename_to.sh <new_name>`
 - Modify authorized information at ``<project_name>/__version__.py``
 
 
