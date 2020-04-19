@@ -8,7 +8,6 @@ build:
 check:
 	@tox -e lint
 	-travis lint
-	pip check
 
 .PHONY: clean
 clean:
