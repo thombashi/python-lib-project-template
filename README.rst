@@ -3,8 +3,8 @@
    :depth: 2
 
 
-Python project template: getting started
-============================================
+Python lib project template: getting started
+=========================================================
 - Click ``[Use this template]`` button to create a new repository
 - Replace ``project_name`` within the repository to an arbitrary name
     - ``./rename_to.sh <new_name>``
@@ -18,20 +18,20 @@ README
 Summary
 ============================================
 
-.. image:: https://img.shields.io/travis/thombashi/python-project-template/master.svg?label=Linux/macOS%20CI
-    :target: https://travis-ci.org/thombashi/python-project-template
+.. image:: https://img.shields.io/travis/thombashi/python-lib-project-template/master.svg?label=Linux/macOS%20CI
+    :target: https://travis-ci.org/thombashi/python-lib-project-template
     :alt: Linux/macOS CI status
 
-.. image:: https://img.shields.io/appveyor/ci/thombashi/python-project-template/master.svg?label=Windows%20CI
-    :target: https://ci.appveyor.com/project/thombashi/python-project-template/branch/master
+.. image:: https://img.shields.io/appveyor/ci/thombashi/python-lib-project-template/master.svg?label=Windows%20CI
+    :target: https://ci.appveyor.com/project/thombashi/python-lib-project-template/branch/master
     :alt: Windows CI status
 
-.. image:: https://coveralls.io/repos/github/thombashi/python-project-template/badge.svg?branch=master
-    :target: https://coveralls.io/github/thombashi/python-project-template?branch=master
+.. image:: https://coveralls.io/repos/github/thombashi/python-lib-project-template/badge.svg?branch=master
+    :target: https://coveralls.io/github/thombashi/python-lib-project-template?branch=master
     :alt: Test coverage: coveralls
 
-.. image:: https://codecov.io/gh/thombashi/python-project-template/branch/master/graph/badge.svg
-  :target: https://codecov.io/gh/thombashi/python-project-template
+.. image:: https://codecov.io/gh/thombashi/python-lib-project-template/branch/master/graph/badge.svg
+  :target: https://codecov.io/gh/thombashi/python-lib-project-template
     :alt: Test coverage: codecov
 
 
