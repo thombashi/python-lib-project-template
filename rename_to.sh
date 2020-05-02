@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if [ $# -ne 1 ]; then
     echo "Usage: rename_to.sh NEW_NAME" 2>&1
