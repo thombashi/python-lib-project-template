@@ -3,7 +3,7 @@
    :depth: 2
 
 
-Python lib project template: getting started
+Python library project template: getting started
 =========================================================
 - Click ``[Use this template]`` button to create a new repository
 - Replace ``project_name`` within the repository to an arbitrary name
