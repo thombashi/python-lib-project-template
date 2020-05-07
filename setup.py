@@ -47,7 +47,7 @@ setuptools.setup(
     license=pkg_info["__license__"],
     long_description=LONG_DESCRIPTION,
     long_description_content_type="text/x-rst",
-    packages=setuptools.find_packages(exclude=["test*"]),
+    packages=setuptools.find_packages(exclude=["tests*"]),
     package_data={MODULE_NAME: ["py.typed"]},
     project_urls={
         "Documentation": "https://{:s}.rtfd.io/".format(MODULE_NAME),
