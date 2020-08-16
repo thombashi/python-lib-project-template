@@ -11,7 +11,7 @@ Python library project template: getting started
 - Modify authorized information at ``<project_name>/__version__.py``
 
 
-Repated Project
+Related Project
 =========================================================
 - `thombashi/python-cli-project-template <https://github.com/thombashi/python-cli-project-template>`__
 
