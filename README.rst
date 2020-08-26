@@ -23,10 +23,6 @@ README
 Summary
 ============================================
 
-.. image:: https://img.shields.io/travis/thombashi/python-lib-project-template/master.svg?label=Linux/macOS%20CI
-    :target: https://travis-ci.org/thombashi/python-lib-project-template
-    :alt: Linux/macOS CI status
-
 .. image:: https://img.shields.io/appveyor/ci/thombashi/python-lib-project-template/master.svg?label=Windows%20CI
     :target: https://ci.appveyor.com/project/thombashi/python-lib-project-template/branch/master
     :alt: Windows CI status
