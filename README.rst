@@ -12,7 +12,7 @@ Python library project template: getting started
 
 
 Related Project
-=========================================================
+---------------------------------------------------------
 - `thombashi/python-cli-project-template <https://github.com/thombashi/python-cli-project-template>`__
 
 
@@ -64,43 +64,3 @@ Installation
 Dependencies
 ============================================
 Python 3.5+
-
-********************************************************
-
-Development
-============================================
-
-Setup
---------------------------------------------
-::
-
-    $ make setup
-
-Running tests
---------------------------------------------
-::
-
-    $ tox
-
-Code formatting
---------------------------------------------
-::
-
-    $ make fmt
-
-Linting
---------------------------------------------
-::
-
-    $ make check
-
-Release a package to PyPI
---------------------------------------------
-::
-
-    $ make build
-    $ make release
-
-- Prerequisites for release:
-    - PyPI account
-    - GPG key
