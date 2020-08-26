@@ -31,6 +31,10 @@ Summary
     :target: https://ci.appveyor.com/project/thombashi/python-lib-project-template/branch/master
     :alt: Windows CI status
 
+.. image:: https://github.com/thombashi/python-lib-project-template/workflows/Tests/badge.svg
+    :target: https://github.com/thombashi/python-lib-project-template/actions?query=workflow%3ATests
+    :alt: Linux/macOS/Windows CI status
+
 .. image:: https://coveralls.io/repos/github/thombashi/python-lib-project-template/badge.svg?branch=master
     :target: https://coveralls.io/github/thombashi/python-lib-project-template?branch=master
     :alt: Test coverage: coveralls
