@@ -36,6 +36,13 @@ Summary
     :alt: Test coverage: codecov
 
 
+Installation
+============================================
+::
+
+    pip install <project_name>
+
+
 Usage
 ============================================
 
@@ -48,13 +55,6 @@ Usage
     .. code-block::
 
         # Output
-
-
-Installation
-============================================
-::
-
-    pip install <project_name>
 
 
 Dependencies
