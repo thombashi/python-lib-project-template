@@ -23,10 +23,6 @@ README
 Summary
 ============================================
 
-.. image:: https://img.shields.io/appveyor/ci/thombashi/python-lib-project-template/master.svg?label=Windows%20CI
-    :target: https://ci.appveyor.com/project/thombashi/python-lib-project-template/branch/master
-    :alt: Windows CI status
-
 .. image:: https://github.com/thombashi/python-lib-project-template/workflows/Tests/badge.svg
     :target: https://github.com/thombashi/python-lib-project-template/actions?query=workflow%3ATests
     :alt: Linux/macOS/Windows CI status
