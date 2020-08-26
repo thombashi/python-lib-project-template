@@ -47,3 +47,9 @@ skip_glob = [
     '*/.pytype/*',
     '*/.tox/*',
 ]
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+]
+
