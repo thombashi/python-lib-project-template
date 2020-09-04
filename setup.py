@@ -21,7 +21,7 @@ def get_release_command_class() -> Dict[str, setuptools.Command]:
     return {"release": ReleaseCommand}
 
 
-with open(os.path.join(MODULE_NAME, "__version__.py")) as f:
+with open(os.path.join(MODULE_NAME.replace("-", "_"), "__version__.py")) as f:
     exec(f.read(), pkg_info)
 
 with open("README.rst", encoding=ENCODING) as f:
