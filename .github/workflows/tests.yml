@@ -47,7 +47,6 @@ jobs:
       - name: Coverage report
         run: |
           python -m pip install --upgrade codecov coveralls
-          codecov
           coveralls
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
