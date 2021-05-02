@@ -1,3 +1,6 @@
+PYTHON := python3
+
+
 .PHONY: build
 build:
 	@make clean
@@ -18,10 +21,10 @@ fmt:
 
 .PHONY: release
 release:
-	@python setup.py release --sign
+	@$(PYTHON) setup.py release --sign
 	@make clean
 
 .PHONY: setup
 setup:
-	@python3 -m pip install --upgrade -e .[test] releasecmd tox
-	python3 -m pip check
+	@$(PYTHON) -m pip install -q --disable-pip-version-check --upgrade -e .[test] releasecmd tox
+	@$(PYTHON) -m pip check
