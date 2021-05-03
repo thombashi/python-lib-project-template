@@ -31,10 +31,6 @@ Summary
     :target: https://coveralls.io/github/thombashi/python-lib-project-template?branch=master
     :alt: Test coverage: coveralls
 
-.. image:: https://codecov.io/gh/thombashi/python-lib-project-template/branch/master/graph/badge.svg
-    :target: https://codecov.io/gh/thombashi/python-lib-project-template
-    :alt: Test coverage: codecov
-
 
 Installation
 ============================================
