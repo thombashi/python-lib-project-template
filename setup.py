@@ -5,7 +5,7 @@ import setuptools
 
 
 MODULE_NAME = "project_name"
-REPOSITORY_URL = "https://github.com/thombashi/{:s}".format(MODULE_NAME)
+REPOSITORY_URL = f"https://github.com/thombashi/{MODULE_NAME:s}"
 REQUIREMENT_DIR = "requirements"
 ENCODING = "utf8"
 
@@ -48,9 +48,9 @@ setuptools.setup(
     packages=setuptools.find_packages(exclude=["tests*"]),
     package_data={MODULE_NAME: ["py.typed"]},
     project_urls={
-        "Documentation": "https://{:s}.rtfd.io/".format(MODULE_NAME),
+        "Documentation": f"https://{MODULE_NAME:s}.rtfd.io/",
         "Source": REPOSITORY_URL,
-        "Tracker": "{:s}/issues".format(REPOSITORY_URL),
+        "Tracker": f"{REPOSITORY_URL:s}/issues",
     },
     python_requires=">=3.6",
     install_requires=INSTALL_REQUIRES,
