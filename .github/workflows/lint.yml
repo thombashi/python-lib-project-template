@@ -43,6 +43,6 @@ jobs:
 
       - name: Run tox
         run: |
-          tox -e lint
+          make check
         env:
           PYTEST_DISCORD_WEBHOOK: ${{ secrets.PYTEST_DISCORD_WEBHOOK }}
