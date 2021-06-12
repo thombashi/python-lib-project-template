@@ -23,13 +23,9 @@ README
 Summary
 ============================================
 
-.. image:: https://github.com/thombashi/python-lib-project-template/workflows/Tests/badge.svg
-    :target: https://github.com/thombashi/python-lib-project-template/actions/workflows/tests.yml
-    :alt: Test result of Linux/macOS/Windows
-
-.. image:: https://github.com/thombashi/python-lib-project-template/actions/workflows/lint.yml/badge.svg
-    :target: https://github.com/thombashi/python-lib-project-template/actions/workflows/lint.yml
-    :alt: Lint result
+.. image:: https://github.com/thombashi/python-lib-project-template/actions/workflows/lint_and_test.yml/badge.svg
+    :target: https://github.com/thombashi/python-lib-project-template/actions/workflows/lint_and_test.yml
+    :alt: Lint/Test result of Linux/macOS/Windows
 
 .. image:: https://coveralls.io/repos/github/thombashi/python-lib-project-template/badge.svg?branch=master
     :target: https://coveralls.io/github/thombashi/python-lib-project-template?branch=master
