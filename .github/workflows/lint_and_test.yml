@@ -2,6 +2,9 @@ name: Lint and Test
 
 on: [push, pull_request]
 
+env:
+  PYTEST_DISCORD_WEBHOOK: ${{ secrets.PYTEST_DISCORD_WEBHOOK }}
+
 jobs:
   lint:
     runs-on: ${{ matrix.os }}
@@ -44,8 +47,6 @@ jobs:
       - name: Lint
         run: |
           make check
-        env:
-          PYTEST_DISCORD_WEBHOOK: ${{ secrets.PYTEST_DISCORD_WEBHOOK }}
 
   unit-test:
     runs-on: ${{ matrix.os }}
@@ -89,8 +90,6 @@ jobs:
       - name: Run tests
         run: |
           tox -e cov
-        env:
-          PYTEST_DISCORD_WEBHOOK: ${{ secrets.PYTEST_DISCORD_WEBHOOK }}
 
       - name: Upload coverage report
         run: |
