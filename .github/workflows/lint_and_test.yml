@@ -23,13 +23,11 @@ jobs:
           python-version: ${{ matrix.python-version }}
 
       - name: Install pip
-        run: |
-          python -m pip install --upgrade "pip>=21.1"
+        run: python -m pip install --upgrade "pip>=21.1"
 
       - name: Get pip cache dir
         id: pip-cache
-        run: |
-          echo "::set-output name=dir::$(pip cache dir)"
+        run: echo "::set-output name=dir::$(pip cache dir)"
 
       - name: Cache pip
         uses: actions/cache@v2
@@ -42,8 +40,7 @@ jobs:
             ${{ matrix.os }}-${{ matrix.python-version }}-pip-
 
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade tox
+        run: make setup
 
       - name: Lint
         run: |
@@ -67,13 +64,11 @@ jobs:
           python-version: ${{ matrix.python-version }}
 
       - name: Install pip
-        run: |
-          python -m pip install --upgrade "pip>=21.1"
+        run: python -m pip install --upgrade "pip>=21.1"
 
       - name: Get pip cache dir
         id: pip-cache
-        run: |
-          echo "::set-output name=dir::$(pip cache dir)"
+        run: echo "::set-output name=dir::$(pip cache dir)"
 
       - name: Cache pip
         uses: actions/cache@v2
@@ -86,8 +81,7 @@ jobs:
             ${{ matrix.os }}-${{ matrix.python-version }}-pip-
 
       - name: Install dependencies
-        run: |
-          make setup
+        run: make setup
 
       - name: Run tests
         run: |
