@@ -38,7 +38,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          make setup
+          python -m pip install --upgrade tox
 
       - name: Lint
         run: |
