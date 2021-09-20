@@ -25,7 +25,7 @@ release:
 
 .PHONY: setup
 setup:
-	@$(PYTHON) -m pip install  --disable-pip-version-check --upgrade releasecmd tox
+	@$(PYTHON) -m pip install -q --disable-pip-version-check --upgrade releasecmd tox
 
 .PHONY: setup-dev
 setup-dev: setup
