@@ -31,6 +31,10 @@ Summary
     :target: https://coveralls.io/github/thombashi/python-lib-project-template?branch=master
     :alt: Test coverage: coveralls
 
+.. image:: https://github.com/thombashi/python-lib-project-template/actions/workflows/codeql-analysis.yml/badge.svg
+    :target: https://github.com/thombashi/python-lib-project-template/actions/workflows/codeql-analysis.yml
+    :alt: CodeQL
+
 
 Installation
 ============================================
