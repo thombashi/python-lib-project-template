@@ -93,7 +93,7 @@ jobs:
           # tox -e cov -- --discord-verbose=0  # reduce verbosity level of summary that send to discord
 
       - name: Upload coverage report
-        uses: coverallsapp/github-action@1
+        uses: coverallsapp/github-action@1.1.3
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
         if: matrix.os == 'ubuntu-latest' && matrix.python-version == '3.8'
