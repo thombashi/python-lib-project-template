@@ -43,8 +43,7 @@ jobs:
         run: make setup-ci
 
       - name: Lint
-        run: |
-          make check
+        run: make check
 
   unit-test:
     runs-on: ${{ matrix.os }}
