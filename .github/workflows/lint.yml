@@ -5,6 +5,7 @@ on: [push, pull_request]
 jobs:
   lint:
     runs-on: ubuntu-latest
+    permissions: read-all
     env:
       python-version: "3.8"
     concurrency:
