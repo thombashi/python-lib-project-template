@@ -12,6 +12,7 @@ jobs:
       group: ${{ github.workflow }}-${GITHUB_JOB}
       cancel-in-progress: true
     timeout-minutes: 20
+
     steps:
       - uses: actions/checkout@v2
 

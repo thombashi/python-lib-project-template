@@ -15,6 +15,7 @@ jobs:
       group: ${{ github.workflow }}-${GITHUB_JOB}
       cancel-in-progress: true
     timeout-minutes: 20
+
     steps:
       - uses: actions/checkout@v2
 
@@ -31,7 +32,6 @@ jobs:
         run: echo "::set-output name=dir::$(pip cache dir)"
 
       - name: Cache pip
-        id: cache-pip
         uses: actions/cache@v2
         with:
           path: |
@@ -50,6 +50,11 @@ jobs:
   unit-test:
     runs-on: ${{ matrix.os }}
     permissions: read-all
+    concurrency:
+      group: ${{ github.workflow }}-${{ matrix.os }}-${{ matrix.python-version }}
+      cancel-in-progress: true
+    timeout-minutes: 20
+
     strategy:
       fail-fast: false
       matrix:
@@ -58,10 +63,7 @@ jobs:
         exclude:
           - os: windows-latest
             python-version: '3.6'
-    concurrency:
-      group: ${{ github.workflow }}-${{ matrix.os }}-${{ matrix.python-version }}
-      cancel-in-progress: true
-    timeout-minutes: 20
+
     steps:
       - uses: actions/checkout@v2
 
