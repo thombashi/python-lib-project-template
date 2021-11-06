@@ -9,7 +9,7 @@ jobs:
     env:
       python-version: "3.8"
     concurrency:
-      group: ${{ github.workflow }}-${GITHUB_JOB}
+      group: ${{ github.workflow }}-${{ env.GITHUB_JOB }}
       cancel-in-progress: true
     timeout-minutes: 20
 
@@ -34,7 +34,7 @@ jobs:
           path: |
             ${{ steps.pip-cache.outputs.dir }}
             ./.tox
-          key: ubuntu-latest-${{ env.python-version }}-pip-${{ hashFiles('**/requirements.txt') }}
+          key: ubuntu-latest-${{ env.python-version }}-pip-${{ hashFiles('setup.py', '**/requirements.txt') }}
           restore-keys: |
             ubuntu-latest-${{ env.python-version }}-pip-
 
