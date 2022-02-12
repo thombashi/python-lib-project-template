@@ -10,20 +10,15 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-    env:
-      python-version: "3.8"
     concurrency:
       group: ${{ github.workflow }}-${{ github.job }}
       cancel-in-progress: true
     timeout-minutes: 20
     container:
-      image: python:3.8-slim
+      image: ghcr.io/thombashi/python-ci:3.8
 
     steps:
       - uses: actions/checkout@v2
-
-      - name: Install dependencies
-        run: make setup-ci
 
       - name: Lint
         run: make check
