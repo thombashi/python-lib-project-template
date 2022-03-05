@@ -5,11 +5,12 @@ on: [push, pull_request]
 env:
   PYTEST_DISCORD_WEBHOOK: ${{ secrets.PYTEST_DISCORD_WEBHOOK }}
 
+permissions:
+  contents: read
+
 jobs:
   lint:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
     concurrency:
       group: ${{ github.workflow }}-${{ github.job }}
       cancel-in-progress: true
@@ -25,7 +26,6 @@ jobs:
 
   unit-test:
     runs-on: ${{ matrix.os }}
-    permissions: read-all
     concurrency:
       group: ${{ github.workflow }}-${{ github.job }}-${{ matrix.os }}-${{ matrix.python-version }}
       cancel-in-progress: true
