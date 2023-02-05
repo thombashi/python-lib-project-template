@@ -59,5 +59,5 @@ Usage
 
 Dependencies
 ============================================
-- Python 3.6+
+- Python 3.7+
 - `Python package dependencies (automatically installed) <https://github.com/thombashi/python-lib-project-template/network/dependencies>`__
