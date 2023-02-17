@@ -2,8 +2,8 @@ name: Lint and Test
 
 on: [push, pull_request]
 
-env:
-  PYTEST_DISCORD_WEBHOOK: ${{ secrets.PYTEST_DISCORD_WEBHOOK }}
+# env:
+#   PYTEST_DISCORD_WEBHOOK: ${{ secrets.PYTEST_DISCORD_WEBHOOK }}
 
 permissions:
   contents: read
@@ -57,8 +57,8 @@ jobs:
 
       - name: Run tests
         run: |
-          # tox -e py
-          tox -e py -- --discord-verbose=0  # reduce verbosity level of summary that send to discord
+          tox -e py
+          # tox -e py -- --discord-verbose=0  # reduce verbosity level of summary that send to discord
 
   coverage:
     runs-on: ubuntu-latest
