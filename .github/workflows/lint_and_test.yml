@@ -46,6 +46,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
           cache: pip
           cache-dependency-path: |
+            setup.py
             **/*requirements.txt
             tox.ini
 
