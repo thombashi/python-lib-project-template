@@ -8,7 +8,7 @@ jobs:
     permissions:
       contents: read
     concurrency:
-      group: ${{ github.workflow }}-${{ github.job }}
+      group: lint-${{ github.workflow }}-${{ github.job }}
       cancel-in-progress: true
     timeout-minutes: 20
     container:

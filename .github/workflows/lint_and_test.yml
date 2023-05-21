@@ -12,7 +12,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     concurrency:
-      group: ${{ github.workflow }}-${{ github.job }}
+      group: lint-test-${{ github.workflow }}-${{ github.job }}
       cancel-in-progress: true
     timeout-minutes: 20
     container:
