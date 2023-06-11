@@ -6,7 +6,7 @@
 Python library project template: getting started
 =========================================================
 - Click ``[Use this template]`` button to create a new repository
-- Replace ``project_name`` within the repository to an arbitrary name
+- Replace ``project_name`` within the repository with an arbitrary name
     - ``./rename_to.sh <new_name>``
 - Modify authorized information at ``<project_name>/__version__.py``
 
