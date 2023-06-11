@@ -20,7 +20,7 @@ fmt:
 
 .PHONY: release
 release:
-	@$(PYTHON) setup.py release --sign
+	@$(PYTHON) setup.py release --verbose
 	@$(MAKE) clean
 
 .PHONY: setup-ci
