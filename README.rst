@@ -23,8 +23,8 @@ README
 Summary
 ============================================
 
-.. image:: https://github.com/thombashi/python-lib-project-template/actions/workflows/lint_and_test.yml/badge.svg
-    :target: https://github.com/thombashi/python-lib-project-template/actions/workflows/lint_and_test.yml
+.. image:: https://github.com/thombashi/python-lib-project-template/actions/workflows/ci.yml/badge.svg
+    :target: https://github.com/thombashi/python-lib-project-template/actions/workflows/ci.yml
     :alt: CI status of Linux/macOS/Windows
 
 .. image:: https://coveralls.io/repos/github/thombashi/python-lib-project-template/badge.svg?branch=master
