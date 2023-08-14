@@ -19,7 +19,7 @@ exclude = '''
 )/
 | docs/conf.py
 '''
-target-version = ['py37', 'py38', 'py39', 'py310', 'py311']
+target-version = ['py38', 'py39', 'py310', 'py311']
 
 [tool.coverage.run]
 source = ['project_name']
@@ -55,7 +55,7 @@ skip_glob = [
 
 [tool.mypy]
 ignore_missing_imports = true
-python_version = 3.7
+python_version = 3.8
 
 pretty = true
 show_error_codes = true
