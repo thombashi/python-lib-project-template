@@ -2,6 +2,18 @@ from .__version__ import __author__, __copyright__, __email__, __license__, __ve
 from .logger import logger  # type: ignore
 
 
+__all__ = (
+    "__author__",
+    "__copyright__",
+    "__email__",
+    "__license__",
+    "__version__",
+    "do_something",
+    "failed_func",
+    "logger",
+)
+
+
 def do_something(value: str) -> str:
     """[summary]
 
