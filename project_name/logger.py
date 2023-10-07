@@ -1,3 +1,5 @@
+# type: ignore
+
 MODULE_NAME = "project_name"
 
 
