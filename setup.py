@@ -41,7 +41,7 @@ setuptools.setup(
     author_email=pkg_info["__email__"],
     description="DESCRIPTION",
     include_package_data=True,
-    keywords=[""],
+    keywords=["library"],
     license=pkg_info["__license__"],
     long_description=LONG_DESCRIPTION,
     long_description_content_type="text/x-rst",
