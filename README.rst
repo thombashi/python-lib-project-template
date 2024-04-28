@@ -23,18 +23,19 @@ README
 Summary
 ============================================
 
-.. image:: https://github.com/thombashi/python-lib-project-template/actions/workflows/ci.yml/badge.svg
+|CI status| |CodeQL| |coverage|
+
+.. |CI status| image:: https://github.com/thombashi/python-lib-project-template/actions/workflows/ci.yml/badge.svg
     :target: https://github.com/thombashi/python-lib-project-template/actions/workflows/ci.yml
     :alt: CI status of Linux/macOS/Windows
 
-.. image:: https://coveralls.io/repos/github/thombashi/python-lib-project-template/badge.svg?branch=master
-    :target: https://coveralls.io/github/thombashi/python-lib-project-template?branch=master
-    :alt: Test coverage: coveralls
-
-.. image:: https://github.com/thombashi/python-lib-project-template/actions/workflows/github-code-scanning/codeql/badge.svg
+.. |CodeQL| image:: https://github.com/thombashi/python-lib-project-template/actions/workflows/github-code-scanning/codeql/badge.svg
     :target: https://github.com/thombashi/python-lib-project-template/actions/workflows/github-code-scanning/codeql
     :alt: CodeQL
 
+.. |coverage| image:: https://coveralls.io/repos/github/thombashi/python-lib-project-template/badge.svg?branch=main
+    :target: https://coveralls.io/github/thombashi/python-lib-project-template?branch=main
+    :alt: Test coverage: coveralls
 
 Installation
 ============================================
