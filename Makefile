@@ -20,8 +20,9 @@ fmt:
 
 .PHONY: release
 release:
-	@$(PYTHON) setup.py release --sign --verbose
-	@$(MAKE) clean
+	$(PYTHON) -m pip install -q --disable-pip-version-check --upgrade releasecmd setuptools
+	$(PYTHON) setup.py release --sign --skip-uploading --verbose
+	$(MAKE) clean
 
 .PHONY: setup-ci
 setup-ci:
@@ -30,8 +31,8 @@ setup-ci:
 
 .PHONY: setup
 setup: setup-ci
-	@$(PYTHON) -m pip install -q --disable-pip-version-check --upgrade -e .[test] releasecmd
-	@$(PYTHON) -m pip check
+	$(PYTHON) -m pip install -q --disable-pip-version-check --upgrade -e .[test]
+	$(PYTHON) -m pip check
 
 .PHONY: test
 test:
