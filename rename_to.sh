@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ $# -ne 1 ]; then
-    echo "Usage: rename_to.sh NEW_NAME" 2>&1
+    echo "Usage: rename_to.sh NEW_NAME" 1>&2
 fi
 
 new_name=$1
