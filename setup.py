@@ -1,5 +1,5 @@
 import os.path
-from typing import Dict, Final, List, Type
+from typing import Final
 
 import setuptools
 
@@ -10,10 +10,10 @@ REPOSITORY_URL: Final = f"https://github.com/{OWNER}/{MODULE_NAME}"
 REQUIREMENT_DIR: Final = "requirements"
 ENCODING: Final = "utf8"
 
-pkg_info: Dict[str, str] = {}
+pkg_info: dict[str, str] = {}
 
 
-def get_release_command_class() -> Dict[str, Type[setuptools.Command]]:
+def get_release_command_class() -> dict[str, type[setuptools.Command]]:
     try:
         from releasecmd import ReleaseCommand
     except ImportError:
@@ -29,10 +29,10 @@ with open("README.rst", encoding=ENCODING) as f:
     LONG_DESCRIPTION: Final = f.read()
 
 with open(os.path.join(REQUIREMENT_DIR, "requirements.txt")) as f:
-    INSTALL_REQUIRES: Final[List[str]] = [line.strip() for line in f if line.strip()]
+    INSTALL_REQUIRES: Final[list[str]] = [line.strip() for line in f if line.strip()]
 
 with open(os.path.join(REQUIREMENT_DIR, "test_requirements.txt")) as f:
-    TESTS_REQUIRES: Final[List[str]] = [line.strip() for line in f if line.strip()]
+    TESTS_REQUIRES: Final[list[str]] = [line.strip() for line in f if line.strip()]
 
 setuptools.setup(
     name=MODULE_NAME,
